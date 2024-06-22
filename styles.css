@@ -1,0 +1,126 @@
+/* Color Palette */
+:root {
+    /**/ 
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333; 
+
+    /* Blue */
+    /* --primary-color: #007bff; */
+     /* Gray */
+    /* --secondary-color: #6c757d; */
+     /* Green */
+    /* --success-color: #28a745; */
+     /* Red */
+    /* --danger-color: #dc3545; */
+     /* Light Gray */
+    /* --light-color: #f8f9fa; */
+     /* Dark Gray */
+    /* --dark-color: #343a40; */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shelf {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+input[type="text"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shelf {
+        width: 100%;
+    }
+}

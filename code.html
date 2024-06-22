@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="shelf" id="shelfUnfinished">
+            <h2>Belum Selesai Dibaca</h2>
+            <ul id="unfinishedList">
+                <!-- Buku-buku yang belum selesai dibaca akan ditampilkan di sini -->
+            </ul>
+        </div>
+        <div class="shelf" id="shelfFinished">
+            <h2>Selesai Dibaca</h2>
+            <ul id="finishedList">
+                <!-- Buku-buku yang sudah selesai dibaca akan ditampilkan di sini -->
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Tambah Buku Baru</h2>
+        <form id="bookForm">
+            <div>
+                <label for="title">Judul:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="author">Penulis:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <button type="submit">Tambahkan Buku</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+
+        --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --success-color: #28a745; /* Green */
+    --danger-color: #dc3545; /* Red */
+    --light-color: #f8f9fa; /* Light Gray */
+    --dark-color: #343a40; /* Dark Gray */
+ -->
